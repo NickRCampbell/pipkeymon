@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pipkeymon"
+version = "0.1.0"
+description = "Windows-only controller to keyboard mapper for browser games"
+readme = "README.rst"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [
+  { name = "PipKeyMon Contributors" }
+]
+dependencies = [
+  "pygame>=2.6,<3",
+]
+
+[project.urls]
+Homepage = "https://github.com/example/pipkeymon"
+Documentation = "https://github.com/example/pipkeymon"
+
+[project.optional-dependencies]
+docs = [
+  "Sphinx>=8,<9",
+]
+
+[project.scripts]
+pipkeymon = "pipkeymon.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
