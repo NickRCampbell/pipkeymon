@@ -33,6 +33,12 @@ Open a terminal and run exactly:
    python -m pip install --upgrade pip
    pip install -e .
    pipkeymon --help
+   pipkeymon run
+
+If you need to inspect controller input while setting up mappings, use debug mode after the normal run path is working:
+
+.. code-block:: powershell
+
    pipkeymon run --debug
 
 The same commands also work with ``python -m``:
@@ -42,7 +48,7 @@ The same commands also work with ``python -m``:
    cd C:\ControlerKeysMapper
    .venv\Scripts\activate
    python -m pipkeymon --help
-   python -m pipkeymon run --debug
+   python -m pipkeymon run
 
 Editable Install
 ================
