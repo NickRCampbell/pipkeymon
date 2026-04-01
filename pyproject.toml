@@ -17,8 +17,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/example/pipkeymon"
-Documentation = "https://github.com/example/pipkeymon"
+Homepage = "https://github.com/NickRCampbell/pipkeymon"
+Documentation = "https://github.com/NickRCampbell/pipkeymon"
 
 [project.optional-dependencies]
 docs = [
