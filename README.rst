@@ -200,3 +200,19 @@ Build them with:
 
    pip install -e .[docs]
    sphinx-build -b html docs docs/_build/html
+
+Release Process
+===============
+
+For the next release:
+
+.. code-block:: powershell
+
+   git add .
+   git commit -m "Release X.Y.Z"
+   git push
+   python -m build
+   python -m twine check dist/*
+   python -m twine upload dist/*
+
+Bump the version in ``pyproject.toml`` and ``src/pipkeymon/__init__.py`` before uploading a new release.
